@@ -1,0 +1,1 @@
+SELECT cd.*, gd.avg_temp AS global_avg_temp FROM city_data cd INNER JOIN global_data gd ON cd.year = gd.year WHERE country = 'United States' AND city = 'Columbus' ORDER BY year ASC
